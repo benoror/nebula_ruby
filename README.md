@@ -35,12 +35,18 @@ Create a token.
 ```ruby
 attributes = {
   empleado: {
+    curp: 'SIFU123',
     noEmpleado: '123',
     noEmpresa: '123',
     noCodificacion: '1',
-    nombre: 'Sifu de la Rosa'
+    nombre: 'Sifu de la Rosa',
+    localidad: 'Localidad 01'
   },
+  tipo: '1',
+  creadoPor: '3',
   msj: 'Para una cita X'
+  diagnostico: '000',
+  prestadorServicios: 'Prueba'
 }
 
 token = Nebula::Token.new(client)
@@ -52,6 +58,24 @@ Retrieve existing token status
 ```ruby
 response = token.status('X0123456')
 response['status']
+```
+
+### Location
+
+Retrieve location list
+
+```ruby
+locations = Nebula::Location.new(client)
+locations.all
+```
+
+### Provider
+
+Retrieve providers list
+
+```ruby
+providers = Nebula::Provider.new(client)
+providers.all
 ```
 
 ## License
