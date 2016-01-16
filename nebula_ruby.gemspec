@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["amed.rdz@gmail.com"]
 
   spec.summary       = %q{Nebula API Ruby Wrapper}
-  spec.homepage      = "https://github.com/amedrz/cumulus_ruby"
+  spec.homepage      = "https://github.com/ecaresoft/nebula_ruby"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

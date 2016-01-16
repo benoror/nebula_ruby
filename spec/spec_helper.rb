@@ -4,8 +4,8 @@ require 'webmock/rspec'
 require 'vcr'
 require 'pry'
 
+URL = 'https://api.nebula.com'
 TOKEN = 'eyJhbGciOiJIUzI1NiJ9'
-URL = 'http://localhost'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures'

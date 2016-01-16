@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost/Nebula/rest/token/status/NX0000000002
+    uri: https://api.nebula.com/Nebula/rest/token/status/NX0000000511
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Token eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE0NTIxOTE4MzUsInN1YiI6IkNvcnJlY3RvIiwiaXNzIjoiTmVidWxhIiwiYXBwIjoiMSIsImV4cCI6MTQ1MjE5MzI3NX0.XSTDdXrKvWr36v-y6zHMPGgmUQr93exms6u09L6Uomk
+      - Token eyJhbGciOiJIUzI1NiJ9
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -27,12 +27,14 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '148'
+      - '298'
       Date:
-      - Thu, 07 Jan 2016 18:53:07 GMT
+      - Sat, 16 Jan 2016 21:57:46 GMT
     body:
       encoding: UTF-8
-      string: '{"status":"En Proceso","empleado":{"noEmpleado":"2","noEmpresa":"3","noCodificacion":"4","nombre":"1","localidad":"6","curp":"7"},"descripcion":"5"}'
+      string: '{"status":"Aprobado","codigoAprobacion":"8gaibhi8eOwKi1DqLQwSOg==","empleado":{"noEmpleado":"1","noEmpresa":"1","noCodificacion":"1","nombre":"John
+        Doe","localidad":"Localidad 01","curp":"JDOE1"},"descripcion":"Prueba","diagnostico":{"nombre":"DESCONOCIDO","clave":"001"},"tipo":"Consulta
+        General"}'
     http_version: 
-  recorded_at: Thu, 07 Jan 2016 18:53:07 GMT
+  recorded_at: Sat, 16 Jan 2016 21:57:47 GMT
 recorded_with: VCR 3.0.1
