@@ -5,7 +5,7 @@ module Nebula
     end
 
     def all
-      client.request(:get, '/Nebula/rest/prestadoresSalud/')
+      client.request(:get, '/prestadoresSalud/')
     end
 
     private

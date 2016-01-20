@@ -5,11 +5,11 @@ module Nebula
     end
 
     def create(params)
-      client.request(:post, '/Nebula/rest/token/new', params)
+      client.request(:post, '/token/new', params)
     end
 
     def status(token)
-      client.request(:get, "/Nebula/rest/token/status/#{token}")
+      client.request(:get, "/token/status/#{token}")
     end
 
     private
