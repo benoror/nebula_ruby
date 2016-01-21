@@ -25,7 +25,7 @@ to make authenticated calls.
 ```ruby
 require 'nebula'
 
-client = Nebula::Client.new(token: '<redacted>', url: '<redacted>')
+client = Nebula::Client.new(token: '<redacted>', url: '<redacted>', base_path: '<redacted>')
 ```
 
 ### Tokens

@@ -8,11 +8,12 @@ module Nebula
     def initialize(options={})
       @token = options[:token]
       @url = options[:url]
+      @base_path = options[:base_path]
     end
 
     def request(type, path, params={})
       block = Proc.new do |request|
-        request.url path
+        request.url "#{base_path}#{path}"
         request.headers['Authorization'] = "Token #{token}"
         request.headers['Content-Type'] = 'application/json'
       end
@@ -51,6 +52,10 @@ module Nebula
 
     def url
       @url
+    end
+
+    def base_path
+      @base_path
     end
 
     def connection

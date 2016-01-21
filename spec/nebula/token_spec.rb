@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe Nebula::Token do
-  let(:client) { Nebula::Client.new(url: URL, token: TOKEN) }
+  let(:client) { Nebula::Client.new(url: URL, token: TOKEN, base_path: BASE_PATH) }
 
   let(:attributes) do
     {
@@ -13,11 +13,11 @@ RSpec.describe Nebula::Token do
       # docSolicitaIncapacidad: 'CEDULA'
       # diasIncapacidad: 0
       empleado: {
-        curp: 'JDOE1',
-        noCodificacion: '1',
-        noEmpleado: '1',
-        noEmpresa: '1',
-        nombre: 'John Doe',
+        curp: 'MEEP12345678901234',
+        noCodificacion: '0',
+        noEmpleado: '999',
+        noEmpresa: '10',
+        nombre: 'Sir Meepington The Third',
         localidad: 'Localidad 01'
       }
     }
@@ -52,7 +52,7 @@ RSpec.describe Nebula::Token do
     let(:token) { Nebula::Token.new(client) }
 
     it 'gets status of token', :vcr do
-      response = token.status('NX0000000511')
+      response = token.status('0000000697')
 
       expect(response.keys).to match_array([
         'status',

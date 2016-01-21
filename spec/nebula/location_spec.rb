@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe Nebula::Location do
-  let(:client) { Nebula::Client.new(url: URL, token: TOKEN) }
+  let(:client) { Nebula::Client.new(url: URL, token: TOKEN, base_path: BASE_PATH) }
 
   let(:locations) { Nebula::Location.new(client) }
 

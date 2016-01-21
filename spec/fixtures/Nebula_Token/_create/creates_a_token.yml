@@ -2,16 +2,16 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.nebula.com/Nebula/rest/token/new
+    uri: http://69.16.245.56:8080/NebulaTest/rest/token/new
     body:
       encoding: UTF-8
-      string: '{"tipo":"1","msj":"Prueba","creadoPor":"3","prestadorServicios":"Prueba","diagnostico":"001","empleado":{"curp":"JDOE1","noCodificacion":"1","noEmpleado":"1","noEmpresa":"1","nombre":"John
-        Doe","localidad":"Localidad 01"}}'
+      string: '{"tipo":"1","msj":"Prueba","creadoPor":"3","prestadorServicios":"Prueba","diagnostico":"001","empleado":{"curp":"MEEP12345678901234","noCodificacion":"0","noEmpleado":"999","noEmpresa":"10","nombre":"Sir
+        Meepington The Third","localidad":"Localidad 01"}}'
     headers:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Token eyJhbGciOiJIUzI1NiJ9
+      - Token eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE0NTMzMjg1NDgsInN1YiI6IkNvcnJlY3RvIiwiaXNzIjoiTmVidWxhIiwiYXBwIjoiMyJ9.0E1SPwKauD9v6Nq6cOpg6SromgHB6GA2IT68Gcyn9yE
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -28,13 +28,13 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '539'
+      - '569'
       Date:
-      - Sat, 16 Jan 2016 21:57:46 GMT
+      - Thu, 21 Jan 2016 01:59:07 GMT
     body:
       encoding: UTF-8
-      string: '{"token":"0000000588","creado":1452981467281,"status":"Aprobado","empleado":{"noEmpleado":"1","noEmpresa":"1","noCodificacion":"1","nombre":"John
-        Doe","localidad":"Localidad 01","curp":"JDOE1"},"descripcion":"Prueba","codigoValidacion":"/IBqfSt9JaNIDojS5x/6xg==","actualiza":{"alias":"system","name":"System","pass":"ZF5k6~ZV$wM&4Ca''","tipo":1,"strTipo":"SuperUser"},"creadoPor":"3","tipo":"1","fechaAprobacion":1452981467316,"prestadorServicios":"Prueba","diasIncapacidad":0,"diagnostico":{"nombre":"DESCONOCIDO","clave":"001"},"app":"3"}'
+      string: '{"token":"0000000697","creado":1453341547297,"status":"Aprobado","empleado":{"noEmpleado":"999","noEmpresa":"10","noCodificacion":"0","nombre":"SirMeepingtonThe
+        Third","localidad":"Localidad 01","curp":"MEEP12345678901234"},"descripcion":"Prueba","codigoValidacion":"Odskwy4ep/gyEPprIaUJ/w==","actualiza":{"alias":"system","name":"System","pass":"ZF5k6~ZV$wM&4Ca''","tipo":1,"strTipo":"SuperUser"},"creadoPor":"3","tipo":"1","fechaAprobacion":1453341547430,"prestadorServicios":"Prueba","diasIncapacidad":0,"diagnostico":{"nombre":"DESCONOCIDO","clave":"001"},"app":"3"}'
     http_version: 
-  recorded_at: Sat, 16 Jan 2016 21:57:47 GMT
+  recorded_at: Thu, 21 Jan 2016 01:59:03 GMT
 recorded_with: VCR 3.0.1

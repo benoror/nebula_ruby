@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.nebula.com/Nebula/rest/prestadoresSalud/
+    uri: http://69.16.245.56:8080/NebulaTest/rest/prestadoresSalud/
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Token eyJhbGciOiJIUzI1NiJ9
+      - Token eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE0NTMzMjg1NDgsInN1YiI6IkNvcnJlY3RvIiwiaXNzIjoiTmVidWxhIiwiYXBwIjoiMyJ9.0E1SPwKauD9v6Nq6cOpg6SromgHB6GA2IT68Gcyn9yE
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -29,7 +29,7 @@ http_interactions:
       Transfer-Encoding:
       - chunked
       Date:
-      - Sat, 16 Jan 2016 21:57:46 GMT
+      - Thu, 21 Jan 2016 01:56:51 GMT
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -222,5 +222,5 @@ http_interactions:
         Q1RPUklBIFMuQy4ifSx7Im5vbWJyZSI6IldJTEZSSURPIEFMVkFSRVogSEVS
         TkFOREVaIn1d
     http_version: 
-  recorded_at: Sat, 16 Jan 2016 21:57:47 GMT
+  recorded_at: Thu, 21 Jan 2016 01:56:47 GMT
 recorded_with: VCR 3.0.1
